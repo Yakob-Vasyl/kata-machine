@@ -5,8 +5,12 @@ declare type Point = {
 
 declare type ListNode<T> = {
     value: T,
-    next?: ListNode<T>,
-    prev?: ListNode<T>,
+    next: ListNode<T> | undefined,
+    prev: ListNode<T> | undefined,
+}
+declare type SinglyLinkedListNode<T> = {
+    value: T,
+    next: SinglyLinkedListNode<T> | undefined
 }
 
 declare interface List<T> {
